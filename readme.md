@@ -13,13 +13,13 @@ It reports any loss in connection via `email` to a list of receivers.
 Install telmon binary from GitHub. In this tutorial, we will be using the linux OS builds.
 
 ```shell
-wget https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_arm64.tar.gz.tar.gz
+wget https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_x86_64.tar.gz
 ```
 
 Extract to `/usr/local/bin/`
 
 ```shell
-tar -C /usr/local/bin -xzf https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_arm64.tar.gz telmon
+tar -C /usr/local/bin -xzf https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_x86_64.tar.gz telmon
 ```
 
 - visit the [releases page](https://github.com/jackkweyunga/telmon/releases) for system specific downloads.
