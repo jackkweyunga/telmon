@@ -24,7 +24,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(config)
+	//fmt.Println(config)
 
 	var (
 		port      = config.Port
