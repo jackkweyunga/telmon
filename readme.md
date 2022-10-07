@@ -19,7 +19,13 @@ wget https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Li
 Extract to `/usr/local/bin/`
 
 ```shell
-tar -C /usr/local/bin -xzf https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_x86_64.tar.gz telmon
+sudo tar -C /usr/local/bin -xzf telmon_0.1_Linux_x86_64.tar.gz telmon
+```
+
+test it. If you see a message as one below, shows that it's working.
+```shell
+$ telmon
+2022/10/07 09:49:57 Config File ".telmon-config" Not Found in ...
 ```
 
 - visit the [releases page](https://github.com/jackkweyunga/telmon/releases) for system specific downloads.
@@ -28,10 +34,8 @@ In order to use telmon, create a configuration file ``.telmon-config.yaml`` in a
 telmon binary.
 
 ### 2. Configurations
-
+create a `.telmon-config.yaml` configuration file in any directory accessible by the user. Home directory is better.
 ```shell
-$ mkdir telmon
-$ cd telmon
 $ nano .telmon-config.yaml
 ```
 
@@ -51,6 +55,17 @@ receivers:
 
 ```shell
 $ telmon
+```
+sample output
+```shell
+$ telmon
+Monitoring Service started successfully ...
+[2022-10-07T09:56:09+03:00] running
+[TelnetClient] Trying to connect to telnet server.
+[TelnetClient] Encountered errors while connecting:
+dial tcp 192.241.152.67:23: connect: connection refused
+Reporting this error
+[TelnetClient] Report sent successfully
 ```
 
 ### 4. Supervisord
