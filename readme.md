@@ -19,10 +19,10 @@ wget <github-path>.tar.gz
 Extract to `/usr/local/bin/`
 
 ```shell
-tar -O /usr/local/bin -xzf <github-path>.tar.gz
+tar -C /usr/local/bin -xzf <github-path>.tar.gz telmon
 ```
 
-- visit the packages page for system specific binaries.
+- visit the releases page for system specific downloads.
 
 In order to use telmon, create a configuration file ``.telmon-config.yaml`` in any directory in which you will run the 
 telmon binary.
