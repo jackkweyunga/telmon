@@ -10,19 +10,19 @@ It reports any loss in connection via `email` to a list of receivers.
 ## How to use it.
 
 ### 1. Installation.
-Install telmon binary from GitHub.
+Install telmon binary from GitHub. In this tutorial, we will be using the linux OS builds.
 
 ```shell
-wget <github-path>.tar.gz
+wget https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_arm64.tar.gz.tar.gz
 ```
 
 Extract to `/usr/local/bin/`
 
 ```shell
-tar -C /usr/local/bin -xzf <github-path>.tar.gz telmon
+tar -C /usr/local/bin -xzf https://github.com/jackkweyunga/telmon/releases/download/v0.1/telmon_0.1_Linux_arm64.tar.gz telmon
 ```
 
-- visit the releases page for system specific downloads.
+- visit the [releases page](https://github.com/jackkweyunga/telmon/releases) for system specific downloads.
 
 In order to use telmon, create a configuration file ``.telmon-config.yaml`` in any directory in which you will run the 
 telmon binary.
