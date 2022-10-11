@@ -47,8 +47,12 @@ start a stats webserver:	telnet server [-p [PORT_NUMBER]]
 			}
 		}
 
+		log.Println("[Telmon] Monitoring service has started")
+		log.Println("[Telmon] Webserver has started listening at port ", port)
+
 		go web.Run(port)
 		monitor.Play()
+
 	},
 }
 

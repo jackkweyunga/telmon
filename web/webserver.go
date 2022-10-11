@@ -309,7 +309,6 @@ const homeHTML = `
             })
 
             genGraph(datasets)
-            console.log(datasets)
 
         }
     })();
