@@ -26,4 +26,4 @@ USER nonroot:nonroot
 
 HEALTHCHECK --interval=5s --timeout=5s CMD ["/healthcheck","http://localhost:8080/ping"]
 
-ENTRYPOINT ["/iratiba-uni-ga"]
+ENTRYPOINT ["/telmon"]
