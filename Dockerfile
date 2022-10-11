@@ -7,8 +7,9 @@ COPY go.mod ./
 COPY go.sum ./
 
 RUN go mod download && \
-    go mod vendor && \
-    touch telmon.log
+    go mod vendor
+
+RUN touch telmon.log
 
 COPY . ./
 
