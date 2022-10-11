@@ -18,7 +18,7 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
 
-RUN mkdir -p app
+RUN mkdir app
 
 COPY --from=build /telmon /app/telmon
 
