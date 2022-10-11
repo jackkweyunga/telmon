@@ -2,3 +2,4 @@
 dist/
 .telmon-config.yaml
 monitor/telmon.log
+telmon.log
