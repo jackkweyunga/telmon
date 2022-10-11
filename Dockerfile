@@ -9,8 +9,7 @@ COPY go.sum ./
 RUN go mod download && \
     go mod vendor
 
-COPY *.go ./
-COPY vendor ./
+COPY . ./
 
 RUN go build -o /telmon
 
