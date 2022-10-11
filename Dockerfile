@@ -31,4 +31,4 @@ HEALTHCHECK --interval=5s --timeout=5s CMD ["/healthcheck","http://localhost:808
 ENTRYPOINT ["/telmon"]
 
 
-docker run -d -v /root/.telmon/.telmon-config.yaml:/.telmon-config.yaml -v /root/.telmon/telmon.log:/telmon.log --network host --name telmon  ghcr.io/jackkweyunga/telmon:web
+#docker run -d -v /root/.telmon/.telmon-config.yaml:/.telmon-config.yaml -v /root/.telmon/telmon.log:/telmon.log --network host --name telmon  ghcr.io/jackkweyunga/telmon:web
