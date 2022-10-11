@@ -7,7 +7,8 @@ COPY go.mod ./
 COPY go.sum ./
 
 RUN go mod download && \
-    go mod vendor
+    go mod vendor && \
+    touch telmon.log
 
 COPY . ./
 
@@ -19,6 +20,7 @@ FROM gcr.io/distroless/base-debian10
 WORKDIR /
 
 COPY --from=build /telmon /telmon
+COPY --from=build /telmon.log /telmon.log
 
 EXPOSE 8080
 
@@ -27,3 +29,6 @@ USER nonroot:nonroot
 HEALTHCHECK --interval=5s --timeout=5s CMD ["/healthcheck","http://localhost:8080/ping"]
 
 ENTRYPOINT ["/telmon"]
+
+
+docker run -d -v /root/.telmon/.telmon-config.yaml:/.telmon-config.yaml -v /root/.telmon/telmon.log:/telmon.log --network host --name telmon  ghcr.io/jackkweyunga/telmon:web
