@@ -249,3 +249,78 @@
 {"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T04:52:02+03:00"}
 {"level":"info","msg":"Service is going down.","time":"2022-10-11T04:52:12+03:00"}
 {"level":"info","msg":"Received signal interrupt \n","time":"2022-10-11T04:52:12+03:00"}
+{"level":"info","msg":"[Telmon] Monitoring Service started successfully ...","time":"2022-10-11T06:11:10+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:11:10+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:11:12+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:11:12+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:11:12+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:11:12+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:11:12+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:11:22+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:11:25+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:11:25+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:11:25+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:11:25+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:11:25+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:11:35+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:11:37+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:11:37+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:11:37+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:11:37+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:11:38+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:11:48+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:11:50+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:11:50+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:11:50+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:11:50+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:11:50+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:12:00+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:12:03+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:12:03+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:12:03+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:12:03+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:12:03+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:12:13+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:12:15+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:12:15+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:12:15+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:12:15+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:12:16+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:12:26+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:12:28+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:12:28+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:12:28+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:12:28+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:12:28+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:12:38+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:12:41+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:12:41+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:12:41+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:12:41+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:12:41+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:12:51+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:12:53+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:12:53+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:12:53+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:12:53+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:12:54+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:13:04+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:13:06+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:13:06+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:13:06+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:13:06+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:13:06+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:13:16+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:13:19+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:13:19+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:13:19+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:13:19+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:13:19+03:00"}
+{"level":"info","msg":"[Telmon] Trying to connect to telnet server.","time":"2022-10-11T06:13:29+03:00"}
+{"level":"info","msg":"[Telmon] Encountered errors while connecting: ","time":"2022-10-11T06:13:31+03:00"}
+{"kind":"failed","level":"error","msg":"[Telmon] %v \ndial tcp [::1]:5555: connectex: No connection could be made because the target machine actively refused it.","time":"2022-10-11T06:13:31+03:00"}
+{"level":"info","msg":"[Telmon] Reporting this error","time":"2022-10-11T06:13:31+03:00"}
+{"level":"info","msg":"[Telmon] Running restoration command: go run .\\server\\telnet-server.go \n","time":"2022-10-11T06:13:31+03:00"}
+{"level":"info","msg":"[Telmon] Restoration failed, command returned error: exit status 127","time":"2022-10-11T06:13:31+03:00"}
+{"level":"info","msg":"Service is going down.","time":"2022-10-11T06:13:42+03:00"}
+{"level":"info","msg":"Received signal interrupt \n","time":"2022-10-11T06:13:42+03:00"}

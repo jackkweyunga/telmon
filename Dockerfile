@@ -16,9 +16,9 @@ RUN go build -o /telmon
 ## Deploy
 FROM gcr.io/distroless/base-debian10
 
-WORKDIR /
+WORKDIR /app/
 
-COPY --from=build /telmon /telmon
+COPY --from=build /telmon ./telmon
 
 EXPOSE 8080
 
@@ -26,4 +26,7 @@ USER nonroot:nonroot
 
 HEALTHCHECK --interval=5s --timeout=5s CMD ["/healthcheck","http://localhost:8080/ping"]
 
-ENTRYPOINT ["/telmon"]
+ENTRYPOINT ["/app/telmon"]
+
+# docker run -d -v /root/.telmon:/app --network host --name telmon  ghcr.io/jackkweyunga/telmon:web
+
