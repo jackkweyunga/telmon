@@ -21,7 +21,7 @@ FROM gcr.io/distroless/base-debian10
 WORKDIR /
 
 COPY --from=build /telmon /telmon
-COPY --from=build /telmon.log /telmon.log
+COPY --from=build /app/telmon.log /telmon.log
 
 EXPOSE 8080
 
