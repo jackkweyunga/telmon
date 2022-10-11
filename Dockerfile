@@ -18,7 +18,7 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /app/
 
-COPY --from=build /telmon ./telmon
+COPY --from=build /telmon telmon
 
 EXPOSE 8080
 
