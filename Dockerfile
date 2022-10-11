@@ -18,9 +18,7 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
 
-RUN mkdir app
-
-COPY --from=build /telmon /app/telmon
+COPY --from=build /telmon /telmon
 
 EXPOSE 8080
 
@@ -28,4 +26,4 @@ USER nonroot:nonroot
 
 HEALTHCHECK --interval=5s --timeout=5s CMD ["/healthcheck","http://localhost:8080/ping"]
 
-ENTRYPOINT ["/app/telmon"]
+ENTRYPOINT ["/telmon"]
