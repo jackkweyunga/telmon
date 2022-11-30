@@ -31,8 +31,6 @@ func Play() {
 		log.Log.Fatal(err)
 	}
 
-	//fmt.Println(config)
-
 	var (
 		port = config.Port
 		addr = config.Addr

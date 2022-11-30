@@ -40,9 +40,6 @@ telmon serve -h
 				log.Fatal(err)
 			}
 		}
-
-		web.Run(port)
-
 		fmt.Printf(`
            _                   
  _        | |                  
@@ -52,6 +49,9 @@ telmon serve -h
  \___)____)_|_|_|_|\___/|_| |_|
                               
 Started a webserver listening at port %v `, port)
+
+		web.Run(port)
+
 	},
 }
 

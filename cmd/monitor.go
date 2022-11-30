@@ -28,9 +28,17 @@ telmon monitor -h
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Monitoring Service Started. " +
-			"\nAll logs are here telmon.log" +
-			"\nTo view stats on the web run command: telmon serve -p 8080 ")
+		fmt.Printf(`
+           _                   
+ _        | |                  
+| |_  ____| |____   ___  ____  
+|  _)/ _  ) |    \ / _ \|  _ \ 
+| |_( (/ /| | | | | |_| | | | |
+ \___)____)_|_|_|_|\___/|_| |_|
+                              
+All logs are here telmon.log
+To access prometheus stats api(/prometheus) run command: telmon serve --port 8080
+`)
 
 		monitor.Play()
 	},
