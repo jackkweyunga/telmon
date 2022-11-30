@@ -9,7 +9,8 @@ import (
 )
 
 type Restore struct {
-	Cmd string `mapstructure:"cmd"`
+	Exec string `mapstructure:"exec"`
+	Cmd  string `mapstructure:"cmd"`
 }
 
 type Config struct {

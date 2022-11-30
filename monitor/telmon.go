@@ -26,7 +26,7 @@ func Monitor(addr string, port int, n Notify, r Restore) {
 
 		// try to restore connection
 		if r.Cmd != "" {
-			restoreConnection(r.Cmd, addr, port)
+			restoreConnection(r.Exec, r.Cmd, addr, port)
 		}
 
 	} else {
@@ -57,11 +57,11 @@ func disconnect(conn *telnet.Conn) {
 	return
 }
 
-func restoreConnection(cmd string, addr string, port int) {
+func restoreConnection(x string, cmd string, addr string, port int) {
 	// run restoration command
-	log.Log.Printf("[Telmon] Running restoration command: %v \n", cmd)
+	log.Log.Printf("[Telmon] Running restoration command: %v -c %v \n", x, cmd)
 
-	c := exec.Command("bash", "-c", cmd)
+	c := exec.Command(x, "-c", cmd)
 	_, err := c.CombinedOutput()
 	if err != nil {
 		log.Log.Printf("[Telmon] Restoration failed, command returned error: %v", err)
