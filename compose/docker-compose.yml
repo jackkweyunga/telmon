@@ -35,14 +35,11 @@ services:
 
   telmon:
     build: ../
-    #    ports:
-    #      - '8080:8080'
     volumes:
       - ./telmon.log:/telmon.log
       - ./.telmon-config.yaml:/.telmon-config.yaml
     restart: unless-stopped
     network_mode: "host"
-
 
 networks:
   metrics:

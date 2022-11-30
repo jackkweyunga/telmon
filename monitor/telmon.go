@@ -15,6 +15,7 @@ func Monitor(addr string, port int, n Notify, r Restore) {
 		out := fmt.Sprintf("%v", err)
 		log.Log.Println("[Telmon] Encountered errors while connecting: ")
 		log.FailLogger.Error("[Telmon] %v \n", out)
+		TotalFailures.WithLabelValues("failed").Inc()
 
 		msg := "Subject: Error Report\r\n" +
 			"\r\n" +
@@ -31,6 +32,7 @@ func Monitor(addr string, port int, n Notify, r Restore) {
 	} else {
 		log.Log.Println("[Telmon] Connection successfully established - OK")
 		log.StableLogger.Info("[Telmon] connection is stable")
+		TotalPasses.WithLabelValues("pass").Inc()
 		disconnect(conn)
 	}
 

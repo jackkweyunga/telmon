@@ -12,7 +12,7 @@ var (
 	restoredLogger = logrus.New()
 )
 
-func LoggingSetup() {
+func Setup() {
 
 	Log.SetFormatter(&logrus.JSONFormatter{})
 	failLogger.SetFormatter(&logrus.JSONFormatter{})

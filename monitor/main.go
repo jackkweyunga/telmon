@@ -22,7 +22,9 @@ type Config struct {
 
 func Play() {
 
-	log.LoggingSetup()
+	log.Setup()
+
+	Init()
 
 	config, err := LoadConfig()
 	if err != nil {
