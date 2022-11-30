@@ -1,8 +1,13 @@
 package cmd
 
 import (
+	"fmt"
+	"github.com/jackkweyunga/telmon/monitor"
+	"github.com/jackkweyunga/telmon/web"
 	"github.com/spf13/cobra"
+	"log"
 	"os"
+	"strconv"
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -30,25 +35,33 @@ start a stats webserver:	telnet server [-p [PORT_NUMBER]]
 `,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	//Run: func(cmd *cobra.Command, args []string) {
-	//	var port int
-	//	var err error
-	//
-	//	port = 8080 // default port
-	//	if len(args) > 1 {
-	//		port, err = strconv.Atoi(args[0])
-	//		if err != nil {
-	//			log.Fatal(err)
-	//		}
-	//	}
-	//
-	//	log.Println("[Telmon] Monitoring service has started")
-	//	log.Println("[Telmon] Webserver has started listening at port ", port)
-	//
-	//	go web.Run(port)
-	//	monitor.Play()
-	//
-	//},
+	Run: func(cmd *cobra.Command, args []string) {
+		var port int
+		var err error
+
+		port = 8080 // default port
+		if len(args) > 1 {
+			port, err = strconv.Atoi(args[0])
+			if err != nil {
+				log.Fatal(err)
+			}
+		}
+
+		fmt.Printf(`
+           _                   
+ _        | |                  
+| |_  ____| |____   ___  ____  
+|  _)/ _  ) |    \ / _ \|  _ \ 
+| |_( (/ /| | | | | |_| | | | |
+ \___)____)_|_|_|_|\___/|_| |_|
+                              
+[Telmon] All logs are here => telmon.log
+[Telmon] To access prometheus stats api go to [HOST]:%v/prometheus)
+`, port)
+		go web.Run(port)
+		monitor.Play()
+
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

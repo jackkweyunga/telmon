@@ -36,8 +36,9 @@ telmon monitor -h
 | |_( (/ /| | | | | |_| | | | |
  \___)____)_|_|_|_|\___/|_| |_|
                               
-All logs are here telmon.log
-To access prometheus stats api(/prometheus) run command: telmon serve --port 8080
+[Telmon] All logs are here telmon.log
+[Telmon] Running telmon without logs api.
+[Telmon] To access prometheus stats api(/prometheus) run command: telmon
 `)
 
 		monitor.Play()
