@@ -4,3 +4,4 @@ dist
 .git
 .gorelease.yaml
 telmon.log
+compose
